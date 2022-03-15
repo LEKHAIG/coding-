@@ -1,0 +1,10 @@
+d={"Fitbit Plus:":7980,"IPods:":22349,"MI Band:":999,"Cult Pass:":2799,"Macbook Pro:":229900,"Digital Camera:":11101,"Alexa:":9999,"Sandwich Toaster:":2195,"Microwave Oven:":9800,"Scale:":4999}
+n=int(input())
+a=[]
+print("Number of the employees:",n)
+print("Here the goodies that are selected for distribution are:")
+for i in range(n):
+    x=input()
+    a=a+[d[x]]
+    print(x,d[x])
+print("And the difference between the chosen goodie with highest price and the lowest price is",max(a)-min(a))
